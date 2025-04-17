@@ -10,22 +10,7 @@
 </head>
 
 <body>
-    <nav class="nav">
-        <div class="links">
-            <a href="perfil.html" class="nav-icons">
-                <i class="fas fa-user"></i>
-                <!-- <span>Perfil</span> -->
-            </a>
-            <a href="explorar.html" class="nav-icons">
-                <i class="fas fa-compass"></i>
-                <!-- <span>Explorar</span> -->
-            </a>
-            <a href="criar.html" class="nav-icons">
-                <i class="fas fa-plus-circle"></i>
-                <!-- <span>Criar</span> -->
-            </a>
-        </div>
-    </nav>
+    <?php include 'components/header.php'?>
     <main>
         <section class="feed">
             <div class="post">
@@ -38,6 +23,10 @@
                             <h3 class="card-titulo">Projeto de Reciclagem Comunitária</h3>
                             <span class="card-data">15 de Março, 2024</span>
                         </div>
+                    </div>
+                    <div class="post-modal-banner">
+                        <img src="https://images.unsplash.com/photo-1531058020387-3be344556be6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80"
+                            alt="Banner do evento">
                     </div>
                     <div class="card-main">
                         <p class="card-conteudo">
