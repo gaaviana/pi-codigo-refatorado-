@@ -29,3 +29,19 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 })
+
+function barraPesquisar() {
+    const pesquisar = document.querySelector('.barra-pesquisar');
+    const criar = document.querySelector('.barra-criar');
+
+    pesquisar.classList.toggle('ativo');
+    criar.classList.remove('ativo');
+}
+
+function barraCriar() {
+    const criar = document.querySelector('.barra-criar');
+    const pesquisar = document.querySelector('.barra-pesquisar');
+
+    criar.classList.toggle('ativo');
+    pesquisar.classList.remove('ativo');
+}

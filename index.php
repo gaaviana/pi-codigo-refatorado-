@@ -21,25 +21,18 @@
     </header>
     <main>
         <section class="acoes-index">
-            <div>
-                <div class="pesquisa-container">
-
-                    <button class="nav-icon pesquisa-icon" id="searchToggle">
-                        <i class="fas fa-search"></i>
-                        <span>Pesquisar</span>
-                    </button>
-
-                    <div class="barra-pesquisa">
-                        <input type="text" placeholder="Pesquisar projetos...">
-                        <button class="botao-pesquisa">
-                            <i class="fas fa-search"></i>
-                        </button>
-                    </div>
-
-                    <button class="botao-cria">
-                        <i class="fas fa-plus-circle"></i>
-                    
-                </div>
+            <div class="botoes-container">
+                <button class="botao botao-pesquisa" onclick="barraPesquisar()">
+                <i class="fas fa-search"></i> 
+                </button>
+                <input type="text" class="barra-pesquisar ativo" placeholder="Digite sua pesquisa...">
+            </div>
+            <div class="botoes-container">
+                <button class="botao botao-criar" onclick="barraCriar()">
+                <i class="fas fa-plus"></i>
+                </button>
+                <input type="text" class="barra-criar" placeholder="Digite o nome do evento" onkeypress="">
+            </div>
         </section>
         <section class="feed">
             <?php include 'components/cards.php' ?>
