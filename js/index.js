@@ -1,10 +1,10 @@
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     const postCard = document.querySelectorAll(".post");
     const postModal = document.getElementById('postModal')
     const postModalFechar = document.querySelector('.fechar-modal')
 
     postCard.forEach(card => {
-        card.addEventListener('click', function() {
+        card.addEventListener('click', function () {
             postModal.style.display = 'block';
 
             postModal.offsetHeight;
@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     postModalFechar.addEventListener('click', fecharModal)
 
-    window.addEventListener('click', function(event) {
+    window.addEventListener('click', function (event) {
         if (event.target === postModal) {
             fecharModal();
         }
@@ -52,13 +52,13 @@ function aoPressionar(event) {
         const criar = document.querySelector('.barra-criar');
         const nome = criar.value.trim();
 
-        if(nome) {
-            window.Location.href = `criar.php?nome=${encodeURIComponent(nome)}`;
+        if (nome) {
+            window.location.href = `criar.php?nome=${encodeURIComponent(nome)}`;
         }
     }
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-const input = document.querySelector('.barra-criar');
-input.addEventListener('keydown', aoPressionar);
+    const input = document.querySelector('.barra-criar');
+    input.addEventListener('keydown', aoPressionar);
 });

@@ -22,15 +22,13 @@ export function buscarCEP(cepDigitado, resultado) {
             document.getElementById(resultado).innerText = 'Erro ao buscar o CEP.';
             console.error(error);
         });
-}
 
-// nao ta funcionadno
-    // Obtém os parâmetros da URL
+    }
+
     const url = new URLSearchParams(window.location.search);
-    // Extrai o valor do parâmetro 'nome' da URL
+ 
     const nome = url.get('nome');
    
-    // Se existir um nome na URL, preenche o campo correspondente
     if (nome) {
-        document.getElementById('nome').value = nome;
+        document.getElementById('nomeEvento').value = nome;
     }
