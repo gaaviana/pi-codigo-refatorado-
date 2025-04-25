@@ -1,4 +1,4 @@
-<header>
+
         <nav class="nav">
             <div class="links">
                 <a href="perfil.html" class="nav-icons">
@@ -15,4 +15,4 @@
                 </a>
             </div>
         </nav>
-    </header>
+ 
