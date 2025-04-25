@@ -9,7 +9,7 @@
                     <i class="fas fa-compass"></i>
                     <!-- <span>Explorar</span> -->
                 </a>
-                <a href="criar.html" class="nav-icons">
+                <a href="criar.php" class="nav-icons">
                     <i class="fas fa-plus-circle"></i>
                     <!-- <span>Criar</span> -->
                 </a>

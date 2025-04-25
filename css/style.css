@@ -26,6 +26,7 @@ main {
     height: auto;
     width: 100%;
     /* width: 70%; */
+    padding-bottom: 3rem ;
 }
 
 header {
@@ -216,15 +217,16 @@ header {
 } */
 
 .nav {
-    border: 1px solid ;
+    border: 1px solid rgba(0, 0, 0, 0.144) ;
     width: 100%;
     display: flex;
     justify-content: space-between;
     padding: 1rem 5%;
     align-items: center;
-    
+    position: fixed;
     bottom: 0;
     z-index: 1000;
+    background-color: #ffffff;
 }
 
 .links {
@@ -265,8 +267,9 @@ header {
     display: flex;
     flex-direction: column;
     gap: 1rem;
-    border: 1px solid;
-    margin: 0.25rem 0;
+    border: 1px solid #00000036;
+    margin: 1rem 0;
+    border-radius: .5rem;
 }
 
 .post-card {
@@ -608,4 +611,59 @@ header {
     background-color: red;
     height: auto;
     display: none;
+}
+
+.formularios {
+    padding: 2rem;
+    border-radius:10px ;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.fromularios h2 {
+    color: var(--cor-primaria);
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.form {
+    margin-bottom: 1.5rem;
+}
+
+.form label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    color: var(--cor-texto);
+}
+
+.form input,
+.form select,
+.form textarea {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #ddd;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+.form input:focus,
+.form select:focus,
+.form textarea:focus {
+    outline: none;
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 2px rgba(76, 175, 80, 0.2);
+}
+
+.form textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+.btnCEP {
+    width: 100px;
+    height: 40px;
+    background-color: #4CAF50;
+    color: white;
+    font-weight: 500;
+    border: none;
 }
