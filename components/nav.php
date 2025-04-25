@@ -1,11 +1,11 @@
 
         <nav class="nav">
             <div class="links">
-                <a href="perfil.html" class="nav-icons">
+                <a href="perfil.php" class="nav-icons">
                     <i class="fas fa-user"></i>
                     <!-- <span>Perfil</span> -->
                 </a>
-                <a href="explorar.html" class="nav-icons">
+                <a href="index.php" class="nav-icons">
                     <i class="fas fa-compass"></i>
                     <!-- <span>Explorar</span> -->
                 </a>

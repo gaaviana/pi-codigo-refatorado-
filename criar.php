@@ -34,12 +34,12 @@
             </div>
 
             <div class="form">
+                <label for="cepEvento">CEP</label>
                 <div class="cep">
-                    <label for="cepEvento">CEP</label>
                     <input type="text" name="cepEvento" id="cepEvento" placeholder="00000-000" required>
                     <button type="button" id="buscarBtn" class="btnCEP">buscar</button>
-                    <div id="resultado"></div>
                 </div>
+                <div id="resultado"></div>
             </div>
 
             <div class="form">
@@ -66,6 +66,10 @@
 
     <?php include 'components/nav.php' ?>
 </body>
+
+<!-- nao ta funcionando -->
+<script src="./js/criar.js"></script>
+
 <script type="module">
     import {
         buscarCEP

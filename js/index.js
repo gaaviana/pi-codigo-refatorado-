@@ -45,3 +45,20 @@ function barraCriar() {
     criar.classList.toggle('ativo');
     pesquisar.classList.remove('ativo');
 }
+
+// não ta funcionado
+function aoPressionar(event) {
+    if (event.key === 'Enter') {
+        const criar = document.querySelector('.barra-criar');
+        const nome = criar.value.trim();
+
+        if(nome) {
+            window.Location.href = `criar.php?nome=${encodeURIComponent(nome)}`;
+        }
+    }
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+const input = document.querySelector('.barra-criar');
+input.addEventListener('keydown', aoPressionar);
+});
