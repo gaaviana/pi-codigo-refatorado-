@@ -218,7 +218,7 @@ header {
 
 .nav {
     border: 1px solid rgba(0, 0, 0, 0.144) ;
-    width: 100%;
+    max-width: 600px;
     display: flex;
     justify-content: space-between;
     padding: 1rem 5%;
@@ -226,7 +226,7 @@ header {
     position: fixed;
     bottom: 0;
     z-index: 1000;
-    background-color: #ffffff;
+    background-color: black;
 }
 
 .links {

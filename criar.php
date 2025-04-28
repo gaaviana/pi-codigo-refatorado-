@@ -44,22 +44,32 @@
 
             <div class="form">
                 <label for="ruaEvento">Rua</label>
-                <input type="text" id="ruaEvento" name="ruaEvento" readonly>
+                <input type="text" id="ruaEvento" name="ruaEvento" required>
+            </div>
+
+            <div class="form">
+                <label for="complementoEvento">complemento</label>
+                <input type="text" id="complementoEvento" name="complementoEvento">
             </div>
 
             <div class="form">
                 <label for="bairroEvento">Bairro</label>
-                <input type="text" id="bairroEvento" name="bairroEvento" readonly>
+                <input type="text" id="bairroEvento" name="bairroEvento" required>
             </div>
 
             <div class="form">
                 <label for="cidadeEvento">Cidade</label>
-                <input type="text" id="cidadeEvento" name="cidadeEvento" readonly>
+                <input type="text" id="cidadeEvento" name="cidadeEvento" required>
             </div>
 
             <div class="form">
                 <label for="estadoEvento">Estado</label>
-                <input type="text" id="estadoEvento" name="estadoEvento" readonly>
+                <input type="text" id="estadoEvento" name="estadoEvento" required>
+            </div>
+
+            <div class="form">
+                <label for="celularEvento">Telefone</label>
+                <input type="tel" id="celularEvento" name="celularEvento" required placeholder="99-9999-9999">
             </div>
         </form>
     </div>
