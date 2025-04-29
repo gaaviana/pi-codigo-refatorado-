@@ -75,23 +75,21 @@
     </div>
 
     <?php include 'components/nav.php' ?>
-</body>
 
-<!-- nao ta funcionando -->
-<script src="./js/criar.js"></script>
-
-<script type="module">
-    import {
-        buscarCEP
-    } from './js/criar.js';
-
-    document.addEventListener('DOMContentLoaded', () => {
-        document.getElementById('buscarBtn').addEventListener('click', function(e) {
-            e.preventDefault();
-            const cep = document.getElementById('cepEvento').value;
-            buscarCEP(cep, 'resultado')
+    <script src="./js/criar.js"></script>
+    
+    <script type="module">
+        import {
+            buscarCEP
+        } from './js/criar.js';
+    
+        document.addEventListener('DOMContentLoaded', () => {
+            document.getElementById('buscarBtn').addEventListener('click', function(e) {
+                e.preventDefault();
+                const cep = document.getElementById('cepEvento').value;
+                buscarCEP(cep, 'resultado')
+            });
         });
-    });
-</script>
-
+    </script>
+</body>
 </html>

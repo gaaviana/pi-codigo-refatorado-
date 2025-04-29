@@ -12,7 +12,6 @@
 <body>
     <header>
         <div>
-            <h1 class="header-titulo">Página inicial</h1>
             <div class="header-links">
                 <a href="" class="header-link">Para você</a>
                 <a href="" class="header-link">Seguindo</a>
