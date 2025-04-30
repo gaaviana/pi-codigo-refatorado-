@@ -599,10 +599,34 @@ header {
     color: #ff4444;
 }
 
-.ns {
-    background-color: red;
-    height: auto;
-    display: none;
+.criar-container {
+    max-width: 600px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+.criar-botoes {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.criar-botao {
+    flex: 1;
+    padding: 1rem;
+    border: none;
+    background-color: #fff;
+    color: #333;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.criar-botao.ativo {
+    background-color: var(--cor-primaria);
+    color: white;
 }
 
 .formularios {
