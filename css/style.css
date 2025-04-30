@@ -392,8 +392,8 @@ header {
 
 .post-modal-banner {
     position: relative;
-    width: 100%;
-    height: 50vh;
+    width: 95%;
+    height: 40vh;
     overflow: hidden;
     border-radius: 0.5rem;
     margin: 0 auto;
@@ -652,8 +652,17 @@ header {
     min-height: 120px;
     resize: vertical;
 }
+
 .cep {
     display: flex;
+}
+
+.formCep {
+    display: none;
+}
+
+.formCep.ativo {
+    display: block;
 }
 
 .btnCEP {

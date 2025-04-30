@@ -24,11 +24,3 @@ export function buscarCEP(cepDigitado, resultado) {
         });
 
     }
-
-    const url = new URLSearchParams(window.location.search);
- 
-    const nome = url.get('nome');
-   
-    if (nome) {
-        document.getElementById('nomeEvento').value = nome;
-    }

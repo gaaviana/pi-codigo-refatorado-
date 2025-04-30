@@ -46,7 +46,6 @@ function barraCriar() {
     pesquisar.classList.remove('ativo');
 }
 
-// não ta funcionado
 function aoPressionar(event) {
     if (event.key === 'Enter') {
         const criar = document.querySelector('.barra-criar');
@@ -62,3 +61,9 @@ document.addEventListener('DOMContentLoaded', () => {
     const input = document.querySelector('.barra-criar');
     input.addEventListener('keydown', aoPressionar);
 });
+
+
+
+
+
+

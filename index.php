@@ -41,6 +41,6 @@
     <?php include 'components/nav.php' ?>
     <?php include 'components/card-modal.php' ?>
 </body>
-<script src="js/index.js"></script>
+<script src="js/main.js"></script>
 
 </html>

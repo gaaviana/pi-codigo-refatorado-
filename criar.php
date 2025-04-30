@@ -42,27 +42,27 @@
                 <div id="resultado"></div>
             </div>
 
-            <div class="form">
+            <div class="form formCep">
                 <label for="ruaEvento">Rua</label>
                 <input type="text" id="ruaEvento" name="ruaEvento" required>
             </div>
 
-            <div class="form">
+            <div class="form formCep">
                 <label for="complementoEvento">complemento</label>
                 <input type="text" id="complementoEvento" name="complementoEvento">
             </div>
 
-            <div class="form">
+            <div class="form formCep">
                 <label for="bairroEvento">Bairro</label>
                 <input type="text" id="bairroEvento" name="bairroEvento" required>
             </div>
 
-            <div class="form">
+            <div class="form formCep">
                 <label for="cidadeEvento">Cidade</label>
                 <input type="text" id="cidadeEvento" name="cidadeEvento" required>
             </div>
 
-            <div class="form">
+            <div class="form formCep">
                 <label for="estadoEvento">Estado</label>
                 <input type="text" id="estadoEvento" name="estadoEvento" required>
             </div>
@@ -71,25 +71,42 @@
                 <label for="celularEvento">Telefone</label>
                 <input type="tel" id="celularEvento" name="celularEvento" required placeholder="99-9999-9999">
             </div>
+
+            <div class="form">
+                <label for="imagemEvento">Imagem do Evento</label>
+                <input type="file" id="imagemEvento" name="imagemEvento" accept="image/*" required>
+            </div>
+
         </form>
     </div>
 
     <?php include 'components/nav.php' ?>
 
-    <script src="./js/criar.js"></script>
-    
     <script type="module">
         import {
             buscarCEP
-        } from './js/criar.js';
-    
+        } from './js/modules/cep.js';
+
         document.addEventListener('DOMContentLoaded', () => {
             document.getElementById('buscarBtn').addEventListener('click', function(e) {
                 e.preventDefault();
+
                 const cep = document.getElementById('cepEvento').value;
                 buscarCEP(cep, 'resultado')
+
+                const formCep = document.querySelectorAll('.formCep');
+                formCep.forEach(el => el.classList.add('ativo'));
             });
         });
+
+        const url = new URLSearchParams(window.location.search);
+
+        const nome = url.get('nome');
+
+        if (nome) {
+            document.getElementById('nomeEvento').value = nome;
+        }
     </script>
 </body>
+
 </html>
