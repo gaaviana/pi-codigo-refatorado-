@@ -30,7 +30,7 @@
                 <button class="botao botao-criar" onclick="barraCriar()">
                 <i class="fas fa-plus"></i>
                 </button>
-                <input type="text" class="barra-criar" placeholder="Digite o nome do evento" onkeypress="">
+                <input type="text" class="barra-criar" placeholder="Digite o nome do Projeto" onkeypress="">
             </div>
         </section>
         <section class="feed">
@@ -41,6 +41,6 @@
     <?php include 'components/nav.php' ?>
     <?php include 'components/card-modal.php' ?>
 </body>
-<script src="js/main.js"></script>
+<script src="js/pages/main.js"></script>
 
 </html>

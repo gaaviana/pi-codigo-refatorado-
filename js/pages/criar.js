@@ -1,9 +1,9 @@
 import {
     buscarCEP
-} from './modules/cep.js';
+} from '../modules/cep.js';
 import {
     alterarFormularios
-} from './modules/formularios.js';
+} from '../modules/formularios.js';
 
 document.addEventListener('DOMContentLoaded', () => {
 
@@ -28,6 +28,11 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 const botoes = document.querySelectorAll('.criar-botao');
+
+botoes.forEach(botao => botao.classList.remove('ativo'));
+
+const botaoEvento = document.getElementById('btnProjeto');
+if (botaoEvento) botaoEvento.classList.add('ativo');
 
 botoes.forEach(botao => {
     botao.addEventListener('click', () => {

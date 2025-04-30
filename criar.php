@@ -89,7 +89,6 @@
 
     <?php include 'components/nav.php' ?>
 
-    <script type="module" src="js/criar.js"></script>
+    <script type="module" src="js/pages/criar.js"></script>
 </body>
-
 </html>
