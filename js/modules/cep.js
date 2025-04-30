@@ -10,16 +10,18 @@ export function buscarCEP(cepDigitado, resultado) {
         .then(data => {
             const res = document.getElementById(resultado);
             if (data.erro) {
-               res.innerText = 'CEP não encontrado.';
+               res.innerText = 'CEP não encontrado. ';
             } else {
-                document.getElementById('ruaEvento').value = data.logradouro || '';
-                document.getElementById('bairroEvento').value = data.bairro || '';
-                document.getElementById('cidadeEvento').value = data.localidade || '';
-                document.getElementById('estadoEvento').value = data.uf || '';
+                res.innerText = '';
+
+                document.getElementById('rua').value = data.logradouro || '';
+                document.getElementById('bairro').value = data.bairro || '';
+                document.getElementById('cidade').value = data.localidade || '';
+                document.getElementById('estado').value = data.uf || '';
             }
         })
         .catch(error => {
-            document.getElementById(resultado).innerText = 'Erro ao buscar o CEP.';
+            document.getElementById(resultado).innerText = 'CEP inválido ou inexistente. Tente novamente ou preencha os campos manualmente';
             console.error(error);
         });
 

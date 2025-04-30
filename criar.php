@@ -12,88 +12,22 @@
 <body>
     <div class="criar-container">
         <div class="criar-botoes">
-            <button id="btnProjetp" class="criar-botao">Novo Projeto</button>
+            <button id="btnProjeto" class="criar-botao">Novo Projeto</button>
             <button id="btnEvento" class="criar-botao">Novo Evento</button>
         </div>
 
         <div class="formularios">
             <h2>Criar Novo Projeto</h2>
 
-            <form id="formProjeto">
+            <form id="formEvento">
                 <div class="form">
-                    <label for="nomeprojeto">Nome do Projeto</label>
-                    <input type="text" id="nomeProjeto" name="nomeProjeto" placeholder="Nome do Projeto" required>
-                </div>
-
-                <div class="form">
-                    <label for="descricaoProjeto">Descrição</label>
-                    <textarea name="descricaoProjeto" id="descricaoProjeto" placeholder="Descreva seu projeto..." required></textarea>
-                </div>
-
-                <div class="form">
-                    <label for="dataProjeto">Data</label>
-                    <input type="date" name="dataProjeto" id="dataProjeto" required>
-                </div>
-
-                <div class="form">
-                    <label for="horarioProjeto">Horario</label>
-                    <input type="time" name="horarioProjeto" id="horarioProjeto" required>
-                </div>
-                <!-- PAREI AQUI NEGO TO EM DUVIDA SE VAI TER Q MUDAR O JS -->
-                <div class="form">
-                    <label for="cepEvento">CEP</label>
-                    <div class="cep">
-                        <input type="text" name="cepEvento" id="cepEvento" placeholder="00000-000" required>
-                        <button type="button" id="buscarBtn" class="btnCEP">buscar</button>
-                    </div>
-                    <div id="resultado"></div>
-                </div>
-
-                <div class="form formCep">
-                    <label for="ruaEvento">Rua</label>
-                    <input type="text" id="ruaEvento" name="ruaEvento" required>
-                </div>
-
-                <div class="form formCep">
-                    <label for="complementoEvento">complemento</label>
-                    <input type="text" id="complementoEvento" name="complementoEvento">
-                </div>
-
-                <div class="form formCep">
-                    <label for="bairroEvento">Bairro</label>
-                    <input type="text" id="bairroEvento" name="bairroEvento" required>
-                </div>
-
-                <div class="form formCep">
-                    <label for="cidadeEvento">Cidade</label>
-                    <input type="text" id="cidadeEvento" name="cidadeEvento" required>
-                </div>
-
-                <div class="form formCep">
-                    <label for="estadoEvento">Estado</label>
-                    <input type="text" id="estadoEvento" name="estadoEvento" required>
-                </div>
-
-                <div class="form">
-                    <label for="celularEvento">Telefone</label>
-                    <input type="tel" id="celularEvento" name="celularEvento" required placeholder="99-9999-9999">
-                </div>
-
-                <div class="form">
-                    <label for="imagemEvento">Imagem do Evento</label>
-                    <input type="file" id="imagemEvento" name="imagemEvento" accept="image/*" required>
-                </div>
-            </form>
-
-            <form id="formEvento" style="display: none;">
-                <div class="form">
-                    <label for="nomeEvento">Nome do Evento</label>
-                    <input type="text" id="nomeEvento" name="nomeEvento" placeholder="Nome do Evento" required>
+                    <label for="nomeEvento">Nome</label>
+                    <input type="text" id="nomeEvento" name="nomeEvento" placeholder="Digite o nome" required>
                 </div>
 
                 <div class="form">
                     <label for="descricaoEvento">Descrição</label>
-                    <textarea name="descricaoEvento" id="descricaoEvento" placeholder="Descreva seu evento..." required></textarea>
+                    <textarea name="descricaoEvento" id="descricaoEvento" placeholder="Descreva..." required></textarea>
                 </div>
 
                 <div class="form">
@@ -107,41 +41,41 @@
                 </div>
 
                 <div class="form">
-                    <label for="cepEvento">CEP</label>
+                    <label for="cep">CEP</label>
                     <div class="cep">
-                        <input type="text" name="cepEvento" id="cepEvento" placeholder="00000-000" required>
+                        <input type="text" name="cep" id="cep" placeholder="00000-000" required>
                         <button type="button" id="buscarBtn" class="btnCEP">buscar</button>
                     </div>
                     <div id="resultado"></div>
                 </div>
 
                 <div class="form formCep">
-                    <label for="ruaEvento">Rua</label>
-                    <input type="text" id="ruaEvento" name="ruaEvento" required>
+                    <label for="rua">Rua</label>
+                    <input type="text" id="rua" name="rua" required>
                 </div>
 
                 <div class="form formCep">
-                    <label for="complementoEvento">complemento</label>
-                    <input type="text" id="complementoEvento" name="complementoEvento">
+                    <label for="complemento">complemento</label>
+                    <input type="text" id="complemento" name="complemento">
                 </div>
 
                 <div class="form formCep">
-                    <label for="bairroEvento">Bairro</label>
-                    <input type="text" id="bairroEvento" name="bairroEvento" required>
+                    <label for="bairro">Bairro</label>
+                    <input type="text" id="bairro" name="bairro" required>
                 </div>
 
                 <div class="form formCep">
-                    <label for="cidadeEvento">Cidade</label>
-                    <input type="text" id="cidadeEvento" name="cidadeEvento" required>
+                    <label for="cidade">Cidade</label>
+                    <input type="text" id="cidade" name="cidade" required>
                 </div>
 
                 <div class="form formCep">
-                    <label for="estadoEvento">Estado</label>
-                    <input type="text" id="estadoEvento" name="estadoEvento" required>
+                    <label for="estado">Estado</label>
+                    <input type="text" id="estado" name="estado" required>
                 </div>
 
                 <div class="form">
-                    <label for="celularEvento">Telefone</label>
+                    <label for="celulaEvento">Telefone</label>
                     <input type="tel" id="celularEvento" name="celularEvento" required placeholder="99-9999-9999">
                 </div>
 
@@ -155,31 +89,7 @@
 
     <?php include 'components/nav.php' ?>
 
-    <script type="module">
-        import {
-            buscarCEP
-        } from './js/modules/cep.js';
-
-        document.addEventListener('DOMContentLoaded', () => {
-            document.getElementById('buscarBtn').addEventListener('click', function(e) {
-                e.preventDefault();
-
-                const cep = document.getElementById('cepEvento').value;
-                buscarCEP(cep, 'resultado')
-
-                const formCep = document.querySelectorAll('.formCep');
-                formCep.forEach(el => el.classList.add('ativo'));
-            });
-        });
-
-        const url = new URLSearchParams(window.location.search);
-
-        const nome = url.get('nome');
-
-        if (nome) {
-            document.getElementById('nomeEvento').value = nome;
-        }
-    </script>
+    <script type="module" src="js/criar.js"></script>
 </body>
 
 </html>
